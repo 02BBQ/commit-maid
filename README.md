@@ -1,71 +1,40 @@
-# commit-maid README
+# 🧹 Commit Maid: 츤데레 AI 메이드가 커밋 메시지 만들어주는 거니까 착각하지 마! 💢
 
-This is the README for your extension "commit-maid". After writing up a brief description, we recommend including the following sections.
-
-## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+> "아냐! 너 편하라고 만든 거 아냐!! 그냥 커밋 메시지가... 보기 싫어서 그랬을 뿐이야! 진짜니까!" 😤
 
 ---
 
-## Following extension guidelines
+## 뭐냐면 말이야... 🙄
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+이건 **Groq LLM**으로 Git diff 보고 커밋 메시지를 자동으로 만들어주는 **VS Code 확장이야**.  
+근데... 바보! 너 때문에 만든 거 아냐! 그냥... 사람들이 너무 커밋을 못 써서 답답해서 만든 거라고!! 💢
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+---
 
-## Working with Markdown
+## 기능? 알려줄게, 딱 한 번이야! 🤏
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+- 🤖 **Groq AI (LLaMA3)** 를 써서 Git diff로부터 자연스럽고 귀여운... 아니, 그럴싸한 커밋 메시지를 생성해.
+- 💬 메시지는 **한국어로**, **Conventional Commits 포맷**으로 나와.
+- 🗯️ **말투는 츤데레 스타일**이니까... 착각하지 마! 너 좋아서 그런 거 아냐!!!
+- 🧠 `feat:` `fix:` `chore:` 같은 prefix도 자동이야.
+- 💌 바로 커밋까지 해줄게... 부탁 같은 거 아니니까 착각하지 마...
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
 
-## For more information
+---
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+## 설치 방법? 알려줘야겠지... 흥!
 
-**Enjoy!**
+1. Groq API 키를 [groq.com](https://groq.com)에서 발급받아
+2. VS Code 설정에서 `commitMaid.groqApiKey`에 붙여넣어
+3. Git 저장소에서 Stage까지 해둬!
+4. `F1` 누르고 → `Commit Maid: Generate Commit Message` 실행!
+
+> 커밋 안 하면 혼내줄 거니까... 진짜야...
+
+---
+
+## 설정 (꼭 하라고! 명령이야!)
+
+| 설정 키 | 설명 |
+|--------|------|
+| `commitMaid.groqApiKey` | Groq API 키 입력 (필수) |

@@ -36,7 +36,10 @@
           "type": "string",
           "default": "mixtral-8x7b-32768",
           "description": "Groq model (mixtral-8x7b-32768 or llama3-70b-8192)",
-          "enum": ["mixtral-8x7b-32768", "llama3-70b-8192"]
+          "enum": [
+            "mixtral-8x7b-32768",
+            "llama3-70b-8192"
+          ]
         }
       }
     },
@@ -70,6 +73,11 @@
   },
   "dependencies": {
     "groq-sdk": "^0.22.0",
-    "node-fetch": "^2.7.0"
+    "node-fetch": "^2.7.0",
+    "vsce": "^2.15.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/02BBQ/commit-maid"
   }
 }
