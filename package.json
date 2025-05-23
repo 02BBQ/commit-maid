@@ -26,6 +26,17 @@
           "type": "string",
           "default": "gpt-3.5-turbo",
           "description": "GPT model to use (e.g., gpt-3.5-turbo, gpt-4)"
+        },
+        "commitMaid.groqApiKey": {
+          "type": "string",
+          "default": "",
+          "description": "Groq Cloud API Key"
+        },
+        "commitMaid.groqModel": {
+          "type": "string",
+          "default": "mixtral-8x7b-32768",
+          "description": "Groq model (mixtral-8x7b-32768 or llama3-70b-8192)",
+          "enum": ["mixtral-8x7b-32768", "llama3-70b-8192"]
         }
       }
     },
@@ -58,6 +69,7 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "groq-sdk": "^0.22.0",
     "node-fetch": "^2.7.0"
   }
 }
